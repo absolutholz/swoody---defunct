@@ -90,14 +90,16 @@ header .progress progress {
 	width: 100%;
 }
 
-.list li a {
-	display: table;
+.list li section {
 	padding: 0.25rem;
+}
+.list li section a {
+	border-bottom: 1px solid rgba(233,138,0,0.75);
+	display: table;
 	table-layout: fixed;
 	width: 100%;
 }
 section li a::after {
-	border-bottom: 1px solid rgba(233,138,0,0.75);
 	content: 'icon_right';
 	display: table-cell;
 	font-family: 'swoody';
@@ -109,18 +111,20 @@ section li a::after {
 }
 
 .list h1 {
-	border-bottom: 1px solid rgba(233,138,0,0.75);
 	display: table-cell;
 	font-size: 1.5em;
 	font-variant: small-caps;
 	font-weight: 700;
 	margin: 0.25rem;
 	padding-bottom: 0.25rem;
+	position: relative;
+	overflow: hidden;
 	vertical-align: middle;
 }
 
 .list h1 .progress {
 	float: right;
-	font-size: 0.75em;
-	margin-top: 0.25em;
+	font-size: 2.25em;
+	position: absolute; right: 0; top: -0.25em;
+	opacity: 0.25;
 }
