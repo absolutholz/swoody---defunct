@@ -81,6 +81,31 @@ header .progress progress {
 
 
 /* ***** Search ***** */
+.bar.search {
+	position: relative;
+}
+.bar.search form {
+	border: 1px solid whiteSmoke;
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+.bar.search input {
+	border: none;
+	display: table-cell;
+	padding: 0.25rem;
+	color: white;
+}
+.bar.search button {
+	display: table-cell;
+	font-family: swoody;
+	width: 2em;
+	height: 100%;
+	border: none;
+}
+.bar.search button[type=reset] {
+	color: red;
+}
 
 /* ***** Infor ***** */
 
@@ -103,9 +128,9 @@ section li a::after {
 	content: 'icon_right';
 	display: table-cell;
 	font-family: 'swoody';
-	font-size: 1.5em;
+	font-size: 2em;
 	font-variant: normal;
-	padding: 0 0.25rem;
+	padding: 0 0.25rem 0.15rem 0.25rem;
 	width: 1em;
 	vertical-align: middle;
 }
@@ -115,7 +140,6 @@ section li a::after {
 	font-size: 1.5em;
 	font-variant: small-caps;
 	font-weight: 700;
-	margin: 0.25rem;
 	padding-bottom: 0.25rem;
 	position: relative;
 	overflow: hidden;
@@ -125,6 +149,6 @@ section li a::after {
 .list h1 .progress {
 	float: right;
 	font-size: 2.25em;
-	position: absolute; right: 0; top: -0.25em;
+	position: absolute; right: 0; top: -0.15em;
 	opacity: 0.25;
 }
